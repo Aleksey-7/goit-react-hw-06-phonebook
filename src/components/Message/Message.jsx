@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
 import { Text, Wrapper } from './Message.styled';
 
-export const Message = ({ text }) => {
+export function Message() {
   return (
     <Wrapper>
-      <Text>{text}</Text>
+      <Text>Contact list is empty.</Text>
     </Wrapper>
   );
-};
+}
 
 Message.propTypes = {
-  text: PropTypes.string.isRequired,
+  text: PropTypes.string,
 };

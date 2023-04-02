@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
   --main-bg-color: #ffffff;
   --second-bg-color: #353434;
   --accent-bg-color: #1ee64dfa;
+  --backdrop-bg-color: rgba(43, 43, 43, 0.5);
 
   --main-hover-animation: 250ms linear;
 }

@@ -20,7 +20,7 @@ const FormSchema = Yup.object().shape({
     .required('Required'),
 });
 
-export const ContactForm = ({ onSubmit }) => {
+export function ContactForm({ onSubmit, onClose }) {
   return (
     <Formik
       initialValues={{ name: '', number: '' }}
@@ -30,6 +30,7 @@ export const ContactForm = ({ onSubmit }) => {
           ...values,
         });
         actions.resetForm();
+        onClose();
       }}
     >
       <Form>
@@ -47,4 +48,4 @@ export const ContactForm = ({ onSubmit }) => {
       </Form>
     </Formik>
   );
-};
+}
